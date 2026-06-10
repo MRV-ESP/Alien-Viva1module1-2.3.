@@ -1,107 +1,3 @@
-
-Claude finished the response
-using the same concept, create a similar game but for Viva 1 Module 1 & Module 2.1-2.3
-
-14:29
-Let me check the skill and also look at your previous Year 7 quiz game to match the style.
-
-
-Viewed 2 files
-Viewed 2 files
-No uploads. I'll work from memory of your previous Year 7 quiz game and my knowledge of Viva 1 Modules 1 and 2.1–2.3. Let me build this now.
-
-Viva 1 content covered:
-
-Module 1: Greetings, introductions, names, ages, birthdays, numbers 1–31, months, alphabet
-Module 2.1: Describing yourself & others (physical appearance)
-Module 2.2: Personality adjectives, adjective agreement
-Module 2.3: Family members, possessives
-Claude's response was interrupted.
-
-Claude finished the response Viva 3 Textbook Mod 4.10 Palabras.pdf pdf Viva 3 Textbook Mod 4.9 Gramatica.pdf pdf Viva 3 Textbook Mod 4.8 Adelante.pdf pdf Viva 3 Textbook Mod 4.7 Resumen + Repaso.pdf pdf Viva 3 Textbook Mod 4.6.pdf pdf Viva 3 Textbook Mod 4.5.pdf pdf Viva 3 Textbook Mod 4.4 (1
-
-pasted
-
-same as this
-
-14:33
-Got it — same Space Invaders–style alien shooter, but with Viva 1 Module 1 & 2.1–2.3 vocab. Let me build it now.
-
-
-Viewed 2 files
-Viewed 2 files
-I'll build it from scratch matching the exact same game mechanics. Let me write it now with full Viva 1 content.
-
-
-Ran a command, read a file
-Ran a command, read a file
-Your Viva 1 alien shooter is ready! Here's what's packed in:
-
-Vocab covered (100+ items):
-
-Mod 1 — Greetings, farewells, introductions, age, birthdays, numbers 1–20, all 12 months
-Mod 2.1 — Physical appearance: hair colour/length/type, eye colour, height, build, adjectives
-Mod 2.2 — Personality adjectives with gender agreement, intensifiers (muy, bastante, un poco)
-Mod 2.3 — Family members, possessives (mi/mis/tu/tus/su/sus)
-Same gameplay as your Viva 3 game:
-
-← → arrow keys to move the cannon, Space to fire
-Correct alien hit → points + combo bonus + teal explosion
-Wrong hit or alien reaches the bottom → lose a life + red flash
-10 levels (aliens speed up each level)
-High score + score history saved between sessions
-Topic filter buttons on the menu (toggle any module on/off)
-Mix of EN→ES and ES→EN questions
-To deploy: download as index.html, upload to a GitHub repo named Alien-Viva1mod1-2, then enable GitHub Pages — same process as last time!
-
-
-Index
-Code · HTML 
-New Viva 1 Text Book (dragged) 2.pdf
-pdf
-
-New Viva 1 Text Book (dragged).pdf
-pdf
-
-Use only the vocab from this
-
-14:49
-I can see the actual textbook pages clearly. Let me rebuild the game with only this exact vocab:
-
-Module 1 (Palabras): Greetings, personality, numbers 1–31, months, pets, colours, family, high-frequency words
-Module 2.1: Me gusta + infinitives (hobbies), opinions (interesante/guay/divertido/estúpido/aburrido)
-Module 2.2: Free time activities (-ar verbs: bailar, tocar, montar, sacar, hablar, cantar, navegar), frequency words
-Module 2.3: Weather expressions, seasons, cuando + activity
-
-Ran a command, read a file
-Ran a command, read a file
-Rebuilt with only textbook-exact vocab from those pages! Here's exactly what's covered:
-
-Mod 1 – Saludos: ¡Hola!, ¿Qué tal?, Bien gracias, fenomenal, regular, fatal, ¿Cómo te llamas?, ¿Dónde vives?, ¡Hasta luego!, etc.
-Mod 1 – Personalidad: divertido/a, estupendo/a, simpático/a, tímido/a, tranquilo/a, el fútbol, la música, el deporte, etc.
-Mod 1 – Números: 1–31 (all forms including veintiuno, treinta y uno)
-Mod 1 – Meses & Cumpleaños: all 12 months + ¿Cuándo es tu cumpleaños? phrases
-Mod 1 – Mascotas & Colores: cobaya, conejo, gato, perro, pez, ratón, serpiente + all 10 colours
-Mod 1 – Familia: hermana/o, hermanastra/o, hijo/hija único/a + high-frequency words (bastante, muy, pero, también, hay, creo que…)
-Mod 2.1: Me gusta/mucho/no me gusta/nada + all 9 activities + opinion words (interesante, guay, divertido, estúpido, aburrido)
-Mod 2.2: All 7 -ar verb activities (bailo, toco, monto…) + frequency words (todos los días, a veces, nunca, de vez en cuando) + hablar conjugation
-Mod 2.3: All 6 weather expressions + cuando + seasons (primavera, verano, otoño, invierno)
-Upload as index.html to GitHub and you're good to go!
-
-
-Index
-Code · HTML 
-
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-
-
-raw
-Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,7 +26,7 @@ Index · HTML
 </style>
 </head>
 <body>
- 
+
 <div id="menu-screen" class="screen">
   <h1>👾 ALIEN ESPAÑOL</h1>
   <h2>VIVA 1 — MÓDULO 1 &amp; 2.1 / 2.2 / 2.3</h2>
@@ -151,7 +47,7 @@ Index · HTML
   <button class="btn" id="start-btn" style="font-size:1.1rem;padding:0.8rem 2.5rem;">▶ START GAME</button>
   <p style="color:#555;font-size:0.72rem;margin-top:0.8rem;">← → to move &nbsp;|&nbsp; SPACE to fire</p>
 </div>
- 
+
 <div id="gameover-screen" class="screen hidden">
   <h1 style="color:#ff4466;">GAME OVER</h1>
   <div id="new-hs">⭐ NEW HIGH SCORE! ⭐</div>
@@ -161,10 +57,10 @@ Index · HTML
   <button class="btn" id="play-again-btn">↩ PLAY AGAIN</button>
   <button class="btn" id="menu-btn">☰ MENU</button>
 </div>
- 
+
 <div id="flash"></div>
 <canvas id="canvas"></canvas>
- 
+
 <script>
 // ── VOCAB (textbook-exact) ──────────────────────────────────────────────────────
 const vocab = {
@@ -350,12 +246,12 @@ const vocab = {
     {es:"en invierno",              en:"in winter"},
   ],
 };
- 
+
 // ── SETUP ───────────────────────────────────────────────────────────────────────
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const flash = document.getElementById('flash');
- 
+
 let W, H;
 function resize() {
   W = canvas.width  = Math.min(window.innerWidth, 900);
@@ -363,21 +259,21 @@ function resize() {
 }
 resize();
 window.addEventListener('resize', resize);
- 
+
 let state = 'menu';
 let score, lives, level, combo;
 let aliens = [], bullets = [], particles = [];
 let ship, currentQ, pool;
 let highScore = parseInt(localStorage.getItem('hs_viva1b') || '0');
 let scoreHistory = JSON.parse(localStorage.getItem('sh_viva1b') || '[]');
- 
+
 const keys = {};
 window.addEventListener('keydown', e => {
   keys[e.code] = true;
   if (e.code === 'Space') { e.preventDefault(); fireBullet(); }
 });
 window.addEventListener('keyup', e => { keys[e.code] = false; });
- 
+
 // ── TOPIC TOGGLES ───────────────────────────────────────────────────────────────
 const selectedTopics = new Set(Object.keys(vocab));
 document.querySelectorAll('.topic-btn').forEach(btn => {
@@ -388,7 +284,7 @@ document.querySelectorAll('.topic-btn').forEach(btn => {
     } else { selectedTopics.add(t); btn.classList.add('active'); }
   });
 });
- 
+
 // ── QUESTION POOL ───────────────────────────────────────────────────────────────
 function buildPool() {
   pool = [];
@@ -398,7 +294,7 @@ function buildPool() {
     [pool[i],pool[j]] = [pool[j],pool[i]];
   }
 }
- 
+
 function newQuestion() {
   if (!pool.length) buildPool();
   const item = pool.splice(0,1)[0];
@@ -406,7 +302,7 @@ function newQuestion() {
   currentQ = { prompt: esFirst ? item.en : item.es, answer: esFirst ? item.es : item.en, esPrompt: !esFirst };
   return currentQ;
 }
- 
+
 function getWrongAnswers(correct) {
   const all = [];
   selectedTopics.forEach(t => { if (vocab[t]) all.push(...vocab[t]); });
@@ -414,19 +310,19 @@ function getWrongAnswers(correct) {
   const candidates = all.map(v => v[key]).filter(v => v !== correct);
   return candidates.sort(() => Math.random()-0.5).slice(0, Math.min(3 + Math.floor(level/3), 5));
 }
- 
+
 // ── SHIP ────────────────────────────────────────────────────────────────────────
 function initShip() { ship = { x: W/2, y: H-50, spd: 12 }; }
- 
+
 function fireBullet() {
   if (state !== 'playing') return;
   bullets.push({ x: ship.x, y: ship.y-15, spd: 14, active: true });
 }
- 
+
 // ── ALIENS ──────────────────────────────────────────────────────────────────────
 const ALIEN_COLORS = ['#ff6b6b','#ffd93d','#6bcb77','#4d96ff','#c77dff','#ff9f1c'];
 const ALIEN_EMOJIS = ['👾','🛸','🤖','👽','🔮','💀'];
- 
+
 function spawnWave() {
   const q = newQuestion();
   const wrongs = getWrongAnswers(q.answer);
@@ -447,7 +343,7 @@ function spawnWave() {
     });
   });
 }
- 
+
 // ── PARTICLES ───────────────────────────────────────────────────────────────────
 function explode(x, y, color, n=14) {
   for (let i=0; i<n; i++) {
@@ -456,16 +352,16 @@ function explode(x, y, color, n=14) {
     particles.push({ x, y, vx:Math.cos(a)*s, vy:Math.sin(a)*s, life:1, color, size:3+Math.random()*4 });
   }
 }
- 
+
 function doFlash(color) {
   flash.style.background = color;
   flash.style.opacity = '0.35';
   setTimeout(()=>{ flash.style.opacity='0'; }, 150);
 }
- 
+
 // ── DRAW ────────────────────────────────────────────────────────────────────────
 const STARS = Array.from({length:80}, ()=>({ x:Math.random()*900, y:Math.random()*700, r:Math.random()*1.5, b:Math.random()*10 }));
- 
+
 function drawStars() {
   STARS.forEach(s => {
     ctx.globalAlpha = 0.3 + 0.7*Math.abs(Math.sin(Date.now()/2000 + s.b));
@@ -476,7 +372,7 @@ function drawStars() {
   });
   ctx.globalAlpha = 1;
 }
- 
+
 function drawShip() {
   const x = ship.x, y = ship.y;
   ctx.fillStyle = '#00ffcc';
@@ -490,7 +386,7 @@ function drawShip() {
   ctx.beginPath(); ctx.moveTo(x, y-28); ctx.lineTo(x, 0); ctx.stroke();
   ctx.setLineDash([]);
 }
- 
+
 function drawAlien(a) {
   a.wobble += 0.04;
   const x = a.x + Math.sin(a.wobble)*3, y = a.y;
@@ -513,14 +409,14 @@ function drawAlien(a) {
     ctx.fillText(a.label, x, y+17);
   }
 }
- 
+
 function drawBullet(b) {
   ctx.shadowColor = '#ffd700'; ctx.shadowBlur = 10;
   ctx.fillStyle = '#ffd700';
   ctx.beginPath(); ctx.ellipse(b.x, b.y, 3, 8, 0, 0, Math.PI*2); ctx.fill();
   ctx.shadowBlur = 0;
 }
- 
+
 function drawParticles() {
   particles.forEach(p => {
     ctx.globalAlpha = p.life; ctx.fillStyle = p.color;
@@ -528,7 +424,7 @@ function drawParticles() {
   });
   ctx.globalAlpha = 1;
 }
- 
+
 function drawHUD() {
   ctx.fillStyle = '#00ffcc'; ctx.font = 'bold 15px Courier New'; ctx.textAlign = 'left';
   ctx.fillText(`SCORE: ${score}`, 12, 24);
@@ -548,17 +444,17 @@ function drawHUD() {
   ctx.fillText(`➤  ${prompt}`, W/2, H-16);
   ctx.shadowBlur = 0;
 }
- 
+
 // ── UPDATE ───────────────────────────────────────────────────────────────────────
 function update() {
   if (keys['ArrowLeft'] || keys['KeyA']) ship.x = Math.max(20, ship.x - ship.spd);
   if (keys['ArrowRight'] || keys['KeyD']) ship.x = Math.min(W-20, ship.x + ship.spd);
- 
+
   bullets.forEach(b => { b.y -= b.spd; });
   bullets = bullets.filter(b => b.y > 0 && b.active);
- 
+
   aliens.forEach(a => { a.y += a.spd; });
- 
+
   // Bullet-alien collisions
   bullets.forEach(b => {
     if (!b.active) return;
@@ -583,7 +479,7 @@ function update() {
     });
   });
   bullets = bullets.filter(b => b.active);
- 
+
   // Alien reaches bottom
   let needNewWave = false;
   aliens.forEach(a => {
@@ -600,13 +496,13 @@ function update() {
   });
   aliens = aliens.filter(a => !a.hit);
   if (needNewWave && state === 'playing') setTimeout(spawnWave, 400);
- 
+
   level = Math.floor(score / 80) + 1;
- 
+
   particles.forEach(p => { p.x+=p.vx; p.y+=p.vy; p.vy+=0.1; p.life-=0.033; });
   particles = particles.filter(p => p.life > 0);
 }
- 
+
 // ── LOOP ────────────────────────────────────────────────────────────────────────
 function loop() {
   if (state === 'playing') {
@@ -620,7 +516,7 @@ function loop() {
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
- 
+
 // ── GAME CONTROL ─────────────────────────────────────────────────────────────────
 function startGame() {
   score=0; lives=3; level=1; combo=0;
@@ -630,7 +526,7 @@ function startGame() {
   document.getElementById('menu-screen').classList.add('hidden');
   document.getElementById('gameover-screen').classList.add('hidden');
 }
- 
+
 function endGame() {
   state='gameover';
   const isNew = score > highScore;
@@ -644,14 +540,14 @@ function endGame() {
   renderHistory('score-history-go');
   document.getElementById('gameover-screen').classList.remove('hidden');
 }
- 
+
 function renderHistory(id) {
   const el=document.getElementById(id);
   if (!scoreHistory.length) { el.textContent=''; return; }
   el.innerHTML='<span style="color:#aaa">— SCORE HISTORY —</span><br>'+
     scoreHistory.map((s,i)=>`${i+1}. ${s.date} &nbsp; Score: ${s.score} &nbsp; Lv ${s.level}`).join('<br>');
 }
- 
+
 function showMenu() {
   state='menu';
   document.getElementById('highscore-display').textContent=`🏆 HIGH SCORE: ${highScore}`;
@@ -659,22 +555,17 @@ function showMenu() {
   document.getElementById('menu-screen').classList.remove('hidden');
   document.getElementById('gameover-screen').classList.add('hidden');
 }
- 
+
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('play-again-btn').addEventListener('click', startGame);
 document.getElementById('menu-btn').addEventListener('click', showMenu);
- 
+
 // Mobile touch
 let touchX=null;
 canvas.addEventListener('touchstart', e=>{ e.preventDefault(); touchX=e.touches[0].clientX; fireBullet(); },{passive:false});
 canvas.addEventListener('touchmove', e=>{ e.preventDefault(); const dx=e.touches[0].clientX-touchX; ship.x=Math.max(20,Math.min(W-20,ship.x+dx)); touchX=e.touches[0].clientX; },{passive:false});
- 
+
 showMenu();
 </script>
 </body>
 </html>
- 
-
-
-
-
