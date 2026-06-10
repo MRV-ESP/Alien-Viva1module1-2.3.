@@ -1,3 +1,107 @@
+
+Claude finished the response
+using the same concept, create a similar game but for Viva 1 Module 1 & Module 2.1-2.3
+
+14:29
+Let me check the skill and also look at your previous Year 7 quiz game to match the style.
+
+
+Viewed 2 files
+Viewed 2 files
+No uploads. I'll work from memory of your previous Year 7 quiz game and my knowledge of Viva 1 Modules 1 and 2.1–2.3. Let me build this now.
+
+Viva 1 content covered:
+
+Module 1: Greetings, introductions, names, ages, birthdays, numbers 1–31, months, alphabet
+Module 2.1: Describing yourself & others (physical appearance)
+Module 2.2: Personality adjectives, adjective agreement
+Module 2.3: Family members, possessives
+Claude's response was interrupted.
+
+Claude finished the response Viva 3 Textbook Mod 4.10 Palabras.pdf pdf Viva 3 Textbook Mod 4.9 Gramatica.pdf pdf Viva 3 Textbook Mod 4.8 Adelante.pdf pdf Viva 3 Textbook Mod 4.7 Resumen + Repaso.pdf pdf Viva 3 Textbook Mod 4.6.pdf pdf Viva 3 Textbook Mod 4.5.pdf pdf Viva 3 Textbook Mod 4.4 (1
+
+pasted
+
+same as this
+
+14:33
+Got it — same Space Invaders–style alien shooter, but with Viva 1 Module 1 & 2.1–2.3 vocab. Let me build it now.
+
+
+Viewed 2 files
+Viewed 2 files
+I'll build it from scratch matching the exact same game mechanics. Let me write it now with full Viva 1 content.
+
+
+Ran a command, read a file
+Ran a command, read a file
+Your Viva 1 alien shooter is ready! Here's what's packed in:
+
+Vocab covered (100+ items):
+
+Mod 1 — Greetings, farewells, introductions, age, birthdays, numbers 1–20, all 12 months
+Mod 2.1 — Physical appearance: hair colour/length/type, eye colour, height, build, adjectives
+Mod 2.2 — Personality adjectives with gender agreement, intensifiers (muy, bastante, un poco)
+Mod 2.3 — Family members, possessives (mi/mis/tu/tus/su/sus)
+Same gameplay as your Viva 3 game:
+
+← → arrow keys to move the cannon, Space to fire
+Correct alien hit → points + combo bonus + teal explosion
+Wrong hit or alien reaches the bottom → lose a life + red flash
+10 levels (aliens speed up each level)
+High score + score history saved between sessions
+Topic filter buttons on the menu (toggle any module on/off)
+Mix of EN→ES and ES→EN questions
+To deploy: download as index.html, upload to a GitHub repo named Alien-Viva1mod1-2, then enable GitHub Pages — same process as last time!
+
+
+Index
+Code · HTML 
+New Viva 1 Text Book (dragged) 2.pdf
+pdf
+
+New Viva 1 Text Book (dragged).pdf
+pdf
+
+Use only the vocab from this
+
+14:49
+I can see the actual textbook pages clearly. Let me rebuild the game with only this exact vocab:
+
+Module 1 (Palabras): Greetings, personality, numbers 1–31, months, pets, colours, family, high-frequency words
+Module 2.1: Me gusta + infinitives (hobbies), opinions (interesante/guay/divertido/estúpido/aburrido)
+Module 2.2: Free time activities (-ar verbs: bailar, tocar, montar, sacar, hablar, cantar, navegar), frequency words
+Module 2.3: Weather expressions, seasons, cuando + activity
+
+Ran a command, read a file
+Ran a command, read a file
+Rebuilt with only textbook-exact vocab from those pages! Here's exactly what's covered:
+
+Mod 1 – Saludos: ¡Hola!, ¿Qué tal?, Bien gracias, fenomenal, regular, fatal, ¿Cómo te llamas?, ¿Dónde vives?, ¡Hasta luego!, etc.
+Mod 1 – Personalidad: divertido/a, estupendo/a, simpático/a, tímido/a, tranquilo/a, el fútbol, la música, el deporte, etc.
+Mod 1 – Números: 1–31 (all forms including veintiuno, treinta y uno)
+Mod 1 – Meses & Cumpleaños: all 12 months + ¿Cuándo es tu cumpleaños? phrases
+Mod 1 – Mascotas & Colores: cobaya, conejo, gato, perro, pez, ratón, serpiente + all 10 colours
+Mod 1 – Familia: hermana/o, hermanastra/o, hijo/hija único/a + high-frequency words (bastante, muy, pero, también, hay, creo que…)
+Mod 2.1: Me gusta/mucho/no me gusta/nada + all 9 activities + opinion words (interesante, guay, divertido, estúpido, aburrido)
+Mod 2.2: All 7 -ar verb activities (bailo, toco, monto…) + frequency words (todos los días, a veces, nunca, de vez en cuando) + hablar conjugation
+Mod 2.3: All 6 weather expressions + cuando + seasons (primavera, verano, otoño, invierno)
+Upload as index.html to GitHub and you're good to go!
+
+
+Index
+Code · HTML 
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+raw
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,379 +112,363 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: #0a0a1a; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; user-select: none; }
   #canvas { display: block; margin: 0 auto; background: #0a0a1a; cursor: none; }
-
-  /* SCREENS */
   .screen { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #0a0a1a; z-index: 10; }
   .screen.hidden { display: none; }
-
-  h1 { font-size: 2.8rem; color: #00ffcc; text-shadow: 0 0 20px #00ffcc; letter-spacing: 4px; margin-bottom: 0.3rem; }
-  h2 { font-size: 1.2rem; color: #7affdf; letter-spacing: 2px; margin-bottom: 2rem; }
-
-  .btn { background: transparent; border: 2px solid #00ffcc; color: #00ffcc; font-family: 'Courier New', monospace; font-size: 1rem; padding: 0.7rem 2rem; margin: 0.4rem; cursor: pointer; letter-spacing: 2px; transition: all 0.2s; }
+  h1 { font-size: 2.6rem; color: #00ffcc; text-shadow: 0 0 20px #00ffcc; letter-spacing: 4px; margin-bottom: 0.3rem; }
+  h2 { font-size: 1rem; color: #7affdf; letter-spacing: 2px; margin-bottom: 1.5rem; }
+  .btn { background: transparent; border: 2px solid #00ffcc; color: #00ffcc; font-family: 'Courier New', monospace; font-size: 0.9rem; padding: 0.6rem 1.6rem; margin: 0.3rem; cursor: pointer; letter-spacing: 2px; transition: all 0.2s; }
   .btn:hover { background: #00ffcc; color: #0a0a1a; box-shadow: 0 0 15px #00ffcc; }
   .btn.active { background: #00ffcc; color: #0a0a1a; }
-
-  .topic-grid { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1.5rem; }
-  .topic-btn { font-size: 0.85rem; padding: 0.5rem 1.2rem; }
-
-  #highscore-display { color: #ffd700; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 1px; }
-  #score-history { font-size: 0.8rem; color: #7affdf; margin-bottom: 1.5rem; text-align: center; line-height: 1.8; }
-
-  /* GAME OVER */
+  .topic-grid { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1.2rem; max-width: 700px; }
+  .topic-btn { font-size: 0.78rem; padding: 0.45rem 1rem; }
+  #highscore-display { color: #ffd700; font-size: 1rem; margin-bottom: 0.8rem; letter-spacing: 1px; }
+  #score-history { font-size: 0.78rem; color: #7affdf; margin-bottom: 1.2rem; text-align: center; line-height: 1.8; }
   #final-score { font-size: 2rem; color: #ffd700; margin: 0.5rem 0; }
-  #final-level { font-size: 1rem; color: #7affdf; margin-bottom: 1.5rem; }
+  #final-level { font-size: 1rem; color: #7affdf; margin-bottom: 1.2rem; }
   #new-hs { color: #ffd700; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 0.5rem; display: none; }
-
-  /* FLASH */
   #flash { position: fixed; inset: 0; pointer-events: none; z-index: 20; opacity: 0; transition: opacity 0.1s; }
 </style>
 </head>
 <body>
-
-<!-- MENU -->
+ 
 <div id="menu-screen" class="screen">
   <h1>👾 ALIEN ESPAÑOL</h1>
-  <h2>VIVA 1 — MÓDULO 1 &amp; 2</h2>
-
+  <h2>VIVA 1 — MÓDULO 1 &amp; 2.1 / 2.2 / 2.3</h2>
   <div id="highscore-display">🏆 HIGH SCORE: 0</div>
-
-  <p style="color:#aaa; font-size:0.85rem; margin-bottom:0.8rem; letter-spacing:1px;">SELECT TOPICS:</p>
+  <p style="color:#aaa;font-size:0.8rem;margin-bottom:0.6rem;letter-spacing:1px;">SELECT TOPICS:</p>
   <div class="topic-grid">
-    <button class="btn topic-btn active" data-topic="mod1">MOD 1 – GREETINGS &amp; NUMBERS</button>
-    <button class="btn topic-btn active" data-topic="mod21">MOD 2.1 – APPEARANCE</button>
-    <button class="btn topic-btn active" data-topic="mod22">MOD 2.2 – PERSONALITY</button>
-    <button class="btn topic-btn active" data-topic="mod23">MOD 2.3 – FAMILY</button>
+    <button class="btn topic-btn active" data-topic="greetings">MOD 1 – SALUDOS</button>
+    <button class="btn topic-btn active" data-topic="personality">MOD 1 – PERSONALIDAD</button>
+    <button class="btn topic-btn active" data-topic="numbers">MOD 1 – NÚMEROS</button>
+    <button class="btn topic-btn active" data-topic="months">MOD 1 – MESES &amp; CUMPLEAÑOS</button>
+    <button class="btn topic-btn active" data-topic="pets">MOD 1 – MASCOTAS &amp; COLORES</button>
+    <button class="btn topic-btn active" data-topic="family">MOD 1 – FAMILIA</button>
+    <button class="btn topic-btn active" data-topic="mod21">MOD 2.1 – ME GUSTA</button>
+    <button class="btn topic-btn active" data-topic="mod22">MOD 2.2 – TIEMPO LIBRE</button>
+    <button class="btn topic-btn active" data-topic="mod23">MOD 2.3 – EL TIEMPO</button>
   </div>
-
   <div id="score-history"></div>
-  <button class="btn" id="start-btn" style="font-size:1.2rem; padding:0.9rem 3rem;">▶ START GAME</button>
-  <p style="color:#555; font-size:0.75rem; margin-top:1rem;">← → to move &nbsp;|&nbsp; SPACE to fire</p>
+  <button class="btn" id="start-btn" style="font-size:1.1rem;padding:0.8rem 2.5rem;">▶ START GAME</button>
+  <p style="color:#555;font-size:0.72rem;margin-top:0.8rem;">← → to move &nbsp;|&nbsp; SPACE to fire</p>
 </div>
-
-<!-- GAME OVER -->
+ 
 <div id="gameover-screen" class="screen hidden">
   <h1 style="color:#ff4466;">GAME OVER</h1>
   <div id="new-hs">⭐ NEW HIGH SCORE! ⭐</div>
   <div id="final-score"></div>
   <div id="final-level"></div>
-  <div id="score-history-go" style="font-size:0.8rem;color:#7affdf;margin-bottom:1.5rem;text-align:center;line-height:1.8;"></div>
+  <div id="score-history-go" style="font-size:0.78rem;color:#7affdf;margin-bottom:1.2rem;text-align:center;line-height:1.8;"></div>
   <button class="btn" id="play-again-btn">↩ PLAY AGAIN</button>
   <button class="btn" id="menu-btn">☰ MENU</button>
 </div>
-
-<!-- FLASH OVERLAY -->
+ 
 <div id="flash"></div>
-
 <canvas id="canvas"></canvas>
-
+ 
 <script>
-// ─── VOCAB DATA ────────────────────────────────────────────────────────────────
+// ── VOCAB (textbook-exact) ──────────────────────────────────────────────────────
 const vocab = {
-  mod1: [
-    // Greetings & phrases
-    {es:"Hola",en:"Hello"},
-    {es:"Adiós",en:"Goodbye"},
-    {es:"Buenos días",en:"Good morning"},
-    {es:"Buenas tardes",en:"Good afternoon"},
-    {es:"Buenas noches",en:"Good evening/night"},
-    {es:"¿Cómo te llamas?",en:"What is your name?"},
-    {es:"Me llamo...",en:"My name is..."},
-    {es:"¿Cuántos años tienes?",en:"How old are you?"},
-    {es:"Tengo... años",en:"I am ... years old"},
-    {es:"¿Cuándo es tu cumpleaños?",en:"When is your birthday?"},
-    {es:"Mi cumpleaños es el...",en:"My birthday is on the..."},
-    {es:"¿De dónde eres?",en:"Where are you from?"},
-    {es:"Soy de...",en:"I am from..."},
-    {es:"¿Cómo estás?",en:"How are you?"},
-    {es:"Estoy bien",en:"I am well"},
-    {es:"Estoy mal",en:"I am unwell"},
-    {es:"Regular",en:"So-so"},
-    {es:"Mucho gusto",en:"Nice to meet you"},
-    {es:"Por favor",en:"Please"},
-    {es:"Gracias",en:"Thank you"},
-    {es:"De nada",en:"You're welcome"},
-    {es:"Perdona",en:"Excuse me / Sorry"},
-    // Numbers
-    {es:"uno",en:"one"},
-    {es:"dos",en:"two"},
-    {es:"tres",en:"three"},
-    {es:"cuatro",en:"four"},
-    {es:"cinco",en:"five"},
-    {es:"seis",en:"six"},
-    {es:"siete",en:"seven"},
-    {es:"ocho",en:"eight"},
-    {es:"nueve",en:"nine"},
-    {es:"diez",en:"ten"},
-    {es:"once",en:"eleven"},
-    {es:"doce",en:"twelve"},
-    {es:"trece",en:"thirteen"},
-    {es:"catorce",en:"fourteen"},
-    {es:"quince",en:"fifteen"},
-    {es:"dieciséis",en:"sixteen"},
-    {es:"diecisiete",en:"seventeen"},
-    {es:"dieciocho",en:"eighteen"},
-    {es:"diecinueve",en:"nineteen"},
-    {es:"veinte",en:"twenty"},
-    // Months
-    {es:"enero",en:"January"},
-    {es:"febrero",en:"February"},
-    {es:"marzo",en:"March"},
-    {es:"abril",en:"April"},
-    {es:"mayo",en:"May"},
-    {es:"junio",en:"June"},
-    {es:"julio",en:"July"},
-    {es:"agosto",en:"August"},
-    {es:"septiembre",en:"September"},
-    {es:"octubre",en:"October"},
-    {es:"noviembre",en:"November"},
-    {es:"diciembre",en:"December"},
+  greetings: [
+    {es:"¡Hola!",             en:"Hello!"},
+    {es:"¿Qué tal?",          en:"How are you?"},
+    {es:"Bien, gracias.",      en:"Fine, thanks."},
+    {es:"fenomenal",           en:"great"},
+    {es:"regular",             en:"not bad"},
+    {es:"fatal",               en:"awful"},
+    {es:"¿Cómo te llamas?",   en:"What are you called?"},
+    {es:"Me llamo...",         en:"I am called..."},
+    {es:"¿Dónde vives?",      en:"Where do you live?"},
+    {es:"Vivo en...",          en:"I live in..."},
+    {es:"¡Hasta luego!",       en:"See you later!"},
+    {es:"¡Adiós!",             en:"Goodbye!"},
+  ],
+  personality: [
+    {es:"divertido/a",         en:"amusing, funny, fun"},
+    {es:"estupendo/a",         en:"brilliant"},
+    {es:"fenomenal",           en:"fantastic"},
+    {es:"generoso/a",          en:"generous"},
+    {es:"genial",              en:"great"},
+    {es:"guay",                en:"cool"},
+    {es:"listo/a",             en:"clever"},
+    {es:"serio/a",             en:"serious"},
+    {es:"simpático/a",         en:"nice, kind"},
+    {es:"sincero/a",           en:"sincere"},
+    {es:"tímido/a",            en:"shy"},
+    {es:"tonto/a",             en:"silly"},
+    {es:"tranquilo/a",         en:"quiet, calm"},
+    {es:"Mi pasión es...",     en:"My passion is..."},
+    {es:"Mi héroe es...",      en:"My hero is..."},
+    {es:"el deporte",          en:"sport"},
+    {es:"el fútbol",           en:"football"},
+    {es:"la música",           en:"music"},
+    {es:"el tenis",            en:"tennis"},
+  ],
+  numbers: [
+    {es:"uno",         en:"1"},
+    {es:"dos",         en:"2"},
+    {es:"tres",        en:"3"},
+    {es:"cuatro",      en:"4"},
+    {es:"cinco",       en:"5"},
+    {es:"seis",        en:"6"},
+    {es:"siete",       en:"7"},
+    {es:"ocho",        en:"8"},
+    {es:"nueve",       en:"9"},
+    {es:"diez",        en:"10"},
+    {es:"once",        en:"11"},
+    {es:"doce",        en:"12"},
+    {es:"trece",       en:"13"},
+    {es:"catorce",     en:"14"},
+    {es:"quince",      en:"15"},
+    {es:"dieciséis",   en:"16"},
+    {es:"diecisiete",  en:"17"},
+    {es:"dieciocho",   en:"18"},
+    {es:"diecinueve",  en:"19"},
+    {es:"veinte",      en:"20"},
+    {es:"veintiuno",   en:"21"},
+    {es:"veintidós",   en:"22"},
+    {es:"veintitrés",  en:"23"},
+    {es:"veinticuatro",en:"24"},
+    {es:"veinticinco", en:"25"},
+    {es:"veintiséis",  en:"26"},
+    {es:"veintisiete", en:"27"},
+    {es:"veintiocho",  en:"28"},
+    {es:"veintinueve", en:"29"},
+    {es:"treinta",     en:"30"},
+    {es:"treinta y uno",en:"31"},
+  ],
+  months: [
+    {es:"enero",           en:"January"},
+    {es:"febrero",         en:"February"},
+    {es:"marzo",           en:"March"},
+    {es:"abril",           en:"April"},
+    {es:"mayo",            en:"May"},
+    {es:"junio",           en:"June"},
+    {es:"julio",           en:"July"},
+    {es:"agosto",          en:"August"},
+    {es:"septiembre",      en:"September"},
+    {es:"octubre",         en:"October"},
+    {es:"noviembre",       en:"November"},
+    {es:"diciembre",       en:"December"},
+    {es:"Tengo... años.",   en:"I am ... years old."},
+    {es:"¿Cuándo es tu cumpleaños?", en:"When is your birthday?"},
+    {es:"Mi cumpleaños es el...", en:"My birthday is the..."},
+  ],
+  pets: [
+    {es:"una cobaya",      en:"a guinea pig"},
+    {es:"un conejo",       en:"a rabbit"},
+    {es:"un gato",         en:"a cat"},
+    {es:"un perro",        en:"a dog"},
+    {es:"un pez",          en:"a fish"},
+    {es:"un ratón",        en:"a mouse"},
+    {es:"una serpiente",   en:"a snake"},
+    {es:"No tengo mascotas.", en:"I don't have any pets."},
+    {es:"blanco/a",        en:"white"},
+    {es:"amarillo/a",      en:"yellow"},
+    {es:"negro/a",         en:"black"},
+    {es:"rojo/a",          en:"red"},
+    {es:"verde",           en:"green"},
+    {es:"gris",            en:"grey"},
+    {es:"marrón",          en:"brown"},
+    {es:"azul",            en:"blue"},
+    {es:"rosa",            en:"pink"},
+    {es:"naranja",         en:"orange"},
+  ],
+  family: [
+    {es:"Tengo...",             en:"I have..."},
+    {es:"una hermana",          en:"a sister"},
+    {es:"un hermano",           en:"a brother"},
+    {es:"una hermanastra",      en:"a half-sister/stepsister"},
+    {es:"un hermanastro",       en:"a half-brother/stepbrother"},
+    {es:"No tengo hermanos.",   en:"I don't have any brothers or sisters."},
+    {es:"Soy hijo único.",      en:"I am an only child. (male)"},
+    {es:"Soy hija única.",      en:"I am an only child. (female)"},
+    {es:"bastante",             en:"quite"},
+    {es:"muy",                  en:"very"},
+    {es:"pero",                 en:"but"},
+    {es:"también",              en:"also, too"},
+    {es:"un poco",              en:"a bit"},
+    {es:"hay",                  en:"there is/there are"},
+    {es:"un chico",             en:"a boy"},
+    {es:"una chica",            en:"a girl"},
+    {es:"creo que",             en:"I think that"},
   ],
   mod21: [
-    // Physical appearance
-    {es:"los ojos",en:"eyes"},
-    {es:"el pelo",en:"hair"},
-    {es:"alto/a",en:"tall"},
-    {es:"bajo/a",en:"short"},
-    {es:"mediano/a",en:"medium height"},
-    {es:"delgado/a",en:"slim / thin"},
-    {es:"gordo/a",en:"fat / chubby"},
-    {es:"guapo/a",en:"good-looking"},
-    {es:"feo/a",en:"ugly"},
-    {es:"joven",en:"young"},
-    {es:"viejo/a",en:"old"},
-    {es:"el pelo largo",en:"long hair"},
-    {es:"el pelo corto",en:"short hair"},
-    {es:"el pelo liso",en:"straight hair"},
-    {es:"el pelo rizado",en:"curly hair"},
-    {es:"el pelo rubio",en:"blonde hair"},
-    {es:"el pelo negro",en:"black hair"},
-    {es:"el pelo castaño",en:"brown hair"},
-    {es:"el pelo pelirrojo",en:"red hair"},
-    {es:"los ojos azules",en:"blue eyes"},
-    {es:"los ojos verdes",en:"green eyes"},
-    {es:"los ojos marrones",en:"brown eyes"},
-    {es:"los ojos negros",en:"black eyes"},
-    {es:"Tiene...",en:"He/She has..."},
-    {es:"Soy...",en:"I am..."},
-    {es:"Es...",en:"He/She is..."},
-    {es:"lleva gafas",en:"wears glasses"},
-    {es:"lleva barba",en:"has a beard"},
+    {es:"Me gusta...",              en:"I like..."},
+    {es:"Me gusta mucho...",        en:"I really like..."},
+    {es:"No me gusta...",           en:"I don't like..."},
+    {es:"No me gusta nada...",      en:"I don't like ... at all"},
+    {es:"navegar por Internet",     en:"to surf the net"},
+    {es:"chatear",                  en:"to chat online"},
+    {es:"escuchar música",          en:"to listen to music"},
+    {es:"jugar a los videojuegos",  en:"to play videogames"},
+    {es:"mandar SMS",               en:"to send texts"},
+    {es:"ver la televisión",        en:"to watch television"},
+    {es:"leer",                     en:"to read"},
+    {es:"escribir correos",         en:"to write emails"},
+    {es:"salir con mis amigos",     en:"to go out with my friends"},
+    {es:"interesante",              en:"interesting"},
+    {es:"guay",                     en:"cool"},
+    {es:"divertido",                en:"fun"},
+    {es:"estúpido",                 en:"stupid"},
+    {es:"aburrido",                 en:"boring"},
+    {es:"porque es...",             en:"because it is..."},
   ],
   mod22: [
-    // Personality adjectives
-    {es:"simpático/a",en:"nice / friendly"},
-    {es:"antipático/a",en:"unfriendly"},
-    {es:"divertido/a",en:"funny / fun"},
-    {es:"aburrido/a",en:"boring"},
-    {es:"inteligente",en:"intelligent"},
-    {es:"tonto/a",en:"silly / stupid"},
-    {es:"trabajador/a",en:"hardworking"},
-    {es:"perezoso/a",en:"lazy"},
-    {es:"generoso/a",en:"generous"},
-    {es:"egoísta",en:"selfish"},
-    {es:"hablador/a",en:"talkative"},
-    {es:"callado/a",en:"quiet"},
-    {es:"serio/a",en:"serious"},
-    {es:"gracioso/a",en:"funny / witty"},
-    {es:"tímido/a",en:"shy"},
-    {es:"valiente",en:"brave"},
-    {es:"creativo/a",en:"creative"},
-    {es:"deportista",en:"sporty"},
-    {es:"amable",en:"kind"},
-    {es:"impaciente",en:"impatient"},
-    {es:"paciente",en:"patient"},
-    {es:"optimista",en:"optimistic"},
-    {es:"pesimista",en:"pessimistic"},
-    // Adjective agreement
-    {es:"Es simpático",en:"He is friendly"},
-    {es:"Es simpática",en:"She is friendly"},
-    {es:"Son trabajadores",en:"They (m) are hardworking"},
-    {es:"Son trabajadoras",en:"They (f) are hardworking"},
-    {es:"muy",en:"very"},
-    {es:"bastante",en:"quite"},
-    {es:"un poco",en:"a little"},
+    {es:"Bailo.",                   en:"I dance."},
+    {es:"Toco la guitarra.",        en:"I play the guitar."},
+    {es:"Monto en bici.",           en:"I ride my bike."},
+    {es:"Saco fotos.",              en:"I take photos."},
+    {es:"Hablo con mis amigos.",    en:"I talk with my friends."},
+    {es:"Canto karaoke.",           en:"I sing karaoke."},
+    {es:"Navego por Internet.",     en:"I surf the net."},
+    {es:"todos los días",           en:"every day"},
+    {es:"a veces",                  en:"sometimes"},
+    {es:"nunca",                    en:"never"},
+    {es:"de vez en cuando",         en:"from time to time"},
+    {es:"¿Qué haces en tu tiempo libre?", en:"What do you do in your free time?"},
+    {es:"hablo",                    en:"I speak"},
+    {es:"hablas",                   en:"you speak"},
+    {es:"habla",                    en:"he/she speaks"},
+    {es:"hablamos",                 en:"we speak"},
+    {es:"hablan",                   en:"they speak"},
+    {es:"no le gusta",              en:"he/she doesn't like it"},
   ],
   mod23: [
-    // Family members
-    {es:"la familia",en:"family"},
-    {es:"el padre",en:"father"},
-    {es:"la madre",en:"mother"},
-    {es:"el hermano",en:"brother"},
-    {es:"la hermana",en:"sister"},
-    {es:"el abuelo",en:"grandfather"},
-    {es:"la abuela",en:"grandmother"},
-    {es:"el tío",en:"uncle"},
-    {es:"la tía",en:"aunt"},
-    {es:"el primo",en:"male cousin"},
-    {es:"la prima",en:"female cousin"},
-    {es:"el hijo",en:"son"},
-    {es:"la hija",en:"daughter"},
-    {es:"el marido",en:"husband"},
-    {es:"la mujer",en:"wife"},
-    {es:"los padres",en:"parents"},
-    {es:"los abuelos",en:"grandparents"},
-    {es:"los hermanos",en:"siblings / brothers"},
-    {es:"Tengo un hermano",en:"I have a brother"},
-    {es:"No tengo hermanos",en:"I don't have any siblings"},
-    {es:"Somos cuatro",en:"There are four of us"},
-    // Possessives
-    {es:"mi",en:"my (singular)"},
-    {es:"mis",en:"my (plural)"},
-    {es:"tu",en:"your (singular)"},
-    {es:"tus",en:"your (plural)"},
-    {es:"su",en:"his/her (singular)"},
-    {es:"sus",en:"his/her (plural)"},
-    {es:"mi madre",en:"my mother"},
-    {es:"mi padre",en:"my father"},
-    {es:"mis abuelos",en:"my grandparents"},
-  ]
+    {es:"Hace frío.",               en:"It is cold."},
+    {es:"Hace sol.",                en:"It is sunny."},
+    {es:"Hace calor.",              en:"It is hot."},
+    {es:"Hace buen tiempo.",        en:"The weather is nice."},
+    {es:"Llueve.",                  en:"It rains / It is raining."},
+    {es:"Nieva.",                   en:"It snows / It is snowing."},
+    {es:"Cuando llueve...",         en:"When it rains..."},
+    {es:"Cuando hace sol...",       en:"When it is sunny..."},
+    {es:"Cuando hace frío...",      en:"When it is cold..."},
+    {es:"Cuando nieva...",          en:"When it snows..."},
+    {es:"en primavera",             en:"in spring"},
+    {es:"en verano",                en:"in summer"},
+    {es:"en otoño",                 en:"in autumn"},
+    {es:"en invierno",              en:"in winter"},
+  ],
 };
-
-// ─── GAME STATE ─────────────────────────────────────────────────────────────────
+ 
+// ── SETUP ───────────────────────────────────────────────────────────────────────
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const flash = document.getElementById('flash');
-
+ 
 let W, H;
 function resize() {
-  W = canvas.width  = Math.min(window.innerWidth,  900);
+  W = canvas.width  = Math.min(window.innerWidth, 900);
   H = canvas.height = Math.min(window.innerHeight, 700);
 }
 resize();
 window.addEventListener('resize', resize);
-
+ 
 let state = 'menu';
-let score, lives, level, combo, comboTimer;
+let score, lives, level, combo;
 let aliens = [], bullets = [], particles = [];
-let ship, spawnTimer, spawnInterval, questionTimer;
-let currentQ, activeTopics, pool;
-let highScore = parseInt(localStorage.getItem('hs_viva1') || '0');
-let scoreHistory = JSON.parse(localStorage.getItem('sh_viva1') || '[]');
-
-// Input
+let ship, currentQ, pool;
+let highScore = parseInt(localStorage.getItem('hs_viva1b') || '0');
+let scoreHistory = JSON.parse(localStorage.getItem('sh_viva1b') || '[]');
+ 
 const keys = {};
 window.addEventListener('keydown', e => {
   keys[e.code] = true;
   if (e.code === 'Space') { e.preventDefault(); fireBullet(); }
 });
-window.addEventListener('keyup', e => keys[e.code] = false);
-
-// ─── TOPIC TOGGLES ──────────────────────────────────────────────────────────────
-const topicButtons = document.querySelectorAll('.topic-btn');
-let selectedTopics = new Set(['mod1','mod21','mod22','mod23']);
-topicButtons.forEach(btn => {
+window.addEventListener('keyup', e => { keys[e.code] = false; });
+ 
+// ── TOPIC TOGGLES ───────────────────────────────────────────────────────────────
+const selectedTopics = new Set(Object.keys(vocab));
+document.querySelectorAll('.topic-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const t = btn.dataset.topic;
     if (selectedTopics.has(t)) {
       if (selectedTopics.size > 1) { selectedTopics.delete(t); btn.classList.remove('active'); }
-    } else {
-      selectedTopics.add(t); btn.classList.add('active');
-    }
+    } else { selectedTopics.add(t); btn.classList.add('active'); }
   });
 });
-
-// ─── QUESTION LOGIC ─────────────────────────────────────────────────────────────
+ 
+// ── QUESTION POOL ───────────────────────────────────────────────────────────────
 function buildPool() {
   pool = [];
-  selectedTopics.forEach(t => pool.push(...(vocab[t] || [])));
-  // shuffle
-  for (let i = pool.length-1; i>0; i--) {
+  selectedTopics.forEach(t => { if (vocab[t]) pool.push(...vocab[t]); });
+  for (let i = pool.length-1; i > 0; i--) {
     const j = Math.floor(Math.random()*(i+1));
     [pool[i],pool[j]] = [pool[j],pool[i]];
   }
 }
-
+ 
 function newQuestion() {
   if (!pool.length) buildPool();
   const item = pool.splice(0,1)[0];
   const esFirst = Math.random() < 0.5;
-  currentQ = {
-    prompt: esFirst ? item.en : item.es,
-    answer: esFirst ? item.es : item.en,
-    isEsPrompt: !esFirst
-  };
+  currentQ = { prompt: esFirst ? item.en : item.es, answer: esFirst ? item.es : item.en, esPrompt: !esFirst };
   return currentQ;
 }
-
-function getWrongAnswers(correct, count) {
+ 
+function getWrongAnswers(correct) {
   const all = [];
-  selectedTopics.forEach(t => all.push(...vocab[t]));
-  const esFirst = !currentQ.isEsPrompt;
-  const candidates = all.map(v => esFirst ? v.es : v.en).filter(v => v !== correct);
-  const shuffled = candidates.sort(() => Math.random()-0.5);
-  return shuffled.slice(0, count);
+  selectedTopics.forEach(t => { if (vocab[t]) all.push(...vocab[t]); });
+  const key = currentQ.esPrompt ? 'es' : 'en';
+  const candidates = all.map(v => v[key]).filter(v => v !== correct);
+  return candidates.sort(() => Math.random()-0.5).slice(0, Math.min(3 + Math.floor(level/3), 5));
 }
-
-// ─── SHIP ───────────────────────────────────────────────────────────────────────
-function initShip() {
-  ship = { x: W/2, y: H - 50, w: 40, h: 30, spd: 12, shooting: false };
-}
-
+ 
+// ── SHIP ────────────────────────────────────────────────────────────────────────
+function initShip() { ship = { x: W/2, y: H-50, spd: 12 }; }
+ 
 function fireBullet() {
   if (state !== 'playing') return;
-  bullets.push({ x: ship.x, y: ship.y - 15, spd: 14, active: true });
+  bullets.push({ x: ship.x, y: ship.y-15, spd: 14, active: true });
 }
-
-// ─── ALIENS ─────────────────────────────────────────────────────────────────────
+ 
+// ── ALIENS ──────────────────────────────────────────────────────────────────────
 const ALIEN_COLORS = ['#ff6b6b','#ffd93d','#6bcb77','#4d96ff','#c77dff','#ff9f1c'];
 const ALIEN_EMOJIS = ['👾','🛸','🤖','👽','🔮','💀'];
-
-function spawnAlienWave() {
+ 
+function spawnWave() {
   const q = newQuestion();
-  const wrongAnswers = getWrongAnswers(q.answer, Math.min(3 + Math.floor(level/3), 5));
-  const allAnswers = [q.answer, ...wrongAnswers].sort(() => Math.random()-0.5);
-
-  const count = allAnswers.length;
+  const wrongs = getWrongAnswers(q.answer);
+  const all = [q.answer, ...wrongs].sort(() => Math.random()-0.5);
+  const count = all.length;
   const spacing = W / (count + 1);
-  const startY = -60;
-  const spd = 0.5 + level * 0.18;
-
-  allAnswers.forEach((ans, i) => {
+  const spd = 0.45 + level * 0.16;
+  all.forEach((ans, i) => {
     aliens.push({
-      x: spacing * (i + 1),
-      y: startY - i * 15,
-      w: 70, h: 45,
+      x: spacing*(i+1), y: -60 - i*20,
+      w: 74, h: 46,
       label: ans,
       isCorrect: ans === q.answer,
-      spd,
+      spd, hit: false,
       color: ALIEN_COLORS[i % ALIEN_COLORS.length],
       emoji: ALIEN_EMOJIS[i % ALIEN_EMOJIS.length],
-      hit: false,
-      wobble: Math.random() * Math.PI * 2
+      wobble: Math.random()*Math.PI*2
     });
   });
 }
-
-// ─── PARTICLES ──────────────────────────────────────────────────────────────────
-function explode(x, y, color, count=14) {
-  for (let i=0; i<count; i++) {
-    const angle = (Math.PI*2/count)*i + Math.random()*0.5;
-    const spd = 2 + Math.random()*4;
-    particles.push({
-      x, y,
-      vx: Math.cos(angle)*spd,
-      vy: Math.sin(angle)*spd,
-      life: 1,
-      color,
-      size: 3+Math.random()*4
-    });
+ 
+// ── PARTICLES ───────────────────────────────────────────────────────────────────
+function explode(x, y, color, n=14) {
+  for (let i=0; i<n; i++) {
+    const a = (Math.PI*2/n)*i + Math.random()*0.4;
+    const s = 2+Math.random()*4;
+    particles.push({ x, y, vx:Math.cos(a)*s, vy:Math.sin(a)*s, life:1, color, size:3+Math.random()*4 });
   }
 }
-
-// ─── FLASH ──────────────────────────────────────────────────────────────────────
+ 
 function doFlash(color) {
   flash.style.background = color;
   flash.style.opacity = '0.35';
   setTimeout(()=>{ flash.style.opacity='0'; }, 150);
 }
-
-// ─── DRAW ───────────────────────────────────────────────────────────────────────
+ 
+// ── DRAW ────────────────────────────────────────────────────────────────────────
+const STARS = Array.from({length:80}, ()=>({ x:Math.random()*900, y:Math.random()*700, r:Math.random()*1.5, b:Math.random()*10 }));
+ 
 function drawStars() {
-  if (!drawStars.stars) {
-    drawStars.stars = Array.from({length:80}, ()=>({ x:Math.random()*900, y:Math.random()*700, r:Math.random()*1.5, b:Math.random() }));
-  }
-  drawStars.stars.forEach(s => {
-    ctx.globalAlpha = 0.4 + 0.6*Math.abs(Math.sin(Date.now()/2000 + s.b*10));
+  STARS.forEach(s => {
+    ctx.globalAlpha = 0.3 + 0.7*Math.abs(Math.sin(Date.now()/2000 + s.b));
     ctx.fillStyle = '#fff';
     ctx.beginPath();
     ctx.arc(s.x % W, s.y % H, s.r, 0, Math.PI*2);
@@ -388,174 +476,105 @@ function drawStars() {
   });
   ctx.globalAlpha = 1;
 }
-
+ 
 function drawShip() {
   const x = ship.x, y = ship.y;
-  // Body
   ctx.fillStyle = '#00ffcc';
-  ctx.beginPath();
-  ctx.moveTo(x, y - 20);
-  ctx.lineTo(x - 18, y + 12);
-  ctx.lineTo(x + 18, y + 12);
-  ctx.closePath();
-  ctx.fill();
-  // Barrel
+  ctx.beginPath(); ctx.moveTo(x, y-20); ctx.lineTo(x-18, y+12); ctx.lineTo(x+18, y+12); ctx.closePath(); ctx.fill();
   ctx.fillStyle = '#7affdf';
-  ctx.fillRect(x - 3, y - 28, 6, 14);
-  // Wings
+  ctx.fillRect(x-3, y-28, 6, 14);
   ctx.fillStyle = '#00ccaa';
-  ctx.beginPath();
-  ctx.moveTo(x - 18, y + 12);
-  ctx.lineTo(x - 30, y + 20);
-  ctx.lineTo(x - 10, y + 12);
-  ctx.closePath();
-  ctx.fill();
-  ctx.beginPath();
-  ctx.moveTo(x + 18, y + 12);
-  ctx.lineTo(x + 30, y + 20);
-  ctx.lineTo(x + 10, y + 12);
-  ctx.closePath();
-  ctx.fill();
-  // Aim line
-  ctx.strokeStyle = 'rgba(0,255,204,0.18)';
-  ctx.lineWidth = 1;
-  ctx.setLineDash([4,6]);
-  ctx.beginPath();
-  ctx.moveTo(x, y - 28);
-  ctx.lineTo(x, 0);
-  ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x-18,y+12); ctx.lineTo(x-30,y+20); ctx.lineTo(x-10,y+12); ctx.closePath(); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(x+18,y+12); ctx.lineTo(x+30,y+20); ctx.lineTo(x+10,y+12); ctx.closePath(); ctx.fill();
+  ctx.strokeStyle = 'rgba(0,255,204,0.15)'; ctx.lineWidth = 1; ctx.setLineDash([4,6]);
+  ctx.beginPath(); ctx.moveTo(x, y-28); ctx.lineTo(x, 0); ctx.stroke();
   ctx.setLineDash([]);
 }
-
+ 
 function drawAlien(a) {
   a.wobble += 0.04;
-  const wx = Math.sin(a.wobble) * 3;
-  const x = a.x + wx, y = a.y;
-
-  // Glow
-  ctx.shadowColor = a.color;
-  ctx.shadowBlur = 12;
-  ctx.fillStyle = a.color + '33';
-  ctx.beginPath();
-  ctx.ellipse(x, y, a.w/2+6, a.h/2+6, 0, 0, Math.PI*2);
-  ctx.fill();
+  const x = a.x + Math.sin(a.wobble)*3, y = a.y;
+  ctx.shadowColor = a.color; ctx.shadowBlur = 12;
+  ctx.fillStyle = a.color+'33';
+  ctx.beginPath(); ctx.ellipse(x, y, a.w/2+6, a.h/2+6, 0, 0, Math.PI*2); ctx.fill();
   ctx.shadowBlur = 0;
-
-  // Body
-  ctx.fillStyle = a.color + '55';
-  ctx.strokeStyle = a.color;
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.ellipse(x, y, a.w/2, a.h/2, 0, 0, Math.PI*2);
-  ctx.fill();
-  ctx.stroke();
-
-  // Emoji
-  ctx.font = '18px serif';
-  ctx.textAlign = 'center';
-  ctx.fillText(a.emoji, x, y - 2);
-
-  // Label — wrap if too long
-  ctx.fillStyle = '#fff';
-  ctx.font = 'bold 11px Courier New';
-  ctx.textAlign = 'center';
+  ctx.fillStyle = a.color+'55'; ctx.strokeStyle = a.color; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.ellipse(x, y, a.w/2, a.h/2, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+  ctx.font = '16px serif'; ctx.textAlign = 'center';
+  ctx.fillStyle = '#fff'; ctx.fillText(a.emoji, x, y-4);
+  ctx.font = 'bold 10px Courier New'; ctx.textAlign = 'center'; ctx.fillStyle = '#fff';
+  // word-wrap label
   const words = a.label.split(' ');
-  if (words.length > 2 && a.label.length > 14) {
+  if (a.label.length > 14 && words.length > 1) {
     const mid = Math.ceil(words.length/2);
-    ctx.fillText(words.slice(0,mid).join(' '), x, y + 16);
-    ctx.fillText(words.slice(mid).join(' '), x, y + 28);
+    ctx.fillText(words.slice(0,mid).join(' '), x, y+14);
+    ctx.fillText(words.slice(mid).join(' '),   x, y+25);
   } else {
-    ctx.fillText(a.label, x, y + 18);
+    ctx.fillText(a.label, x, y+17);
   }
 }
-
+ 
 function drawBullet(b) {
-  ctx.shadowColor = '#ffd700';
-  ctx.shadowBlur = 10;
+  ctx.shadowColor = '#ffd700'; ctx.shadowBlur = 10;
   ctx.fillStyle = '#ffd700';
-  ctx.beginPath();
-  ctx.ellipse(b.x, b.y, 3, 8, 0, 0, Math.PI*2);
-  ctx.fill();
+  ctx.beginPath(); ctx.ellipse(b.x, b.y, 3, 8, 0, 0, Math.PI*2); ctx.fill();
   ctx.shadowBlur = 0;
 }
-
+ 
+function drawParticles() {
+  particles.forEach(p => {
+    ctx.globalAlpha = p.life; ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.size*p.life, 0, Math.PI*2); ctx.fill();
+  });
+  ctx.globalAlpha = 1;
+}
+ 
 function drawHUD() {
-  // Score
-  ctx.fillStyle = '#00ffcc';
-  ctx.font = 'bold 16px Courier New';
-  ctx.textAlign = 'left';
+  ctx.fillStyle = '#00ffcc'; ctx.font = 'bold 15px Courier New'; ctx.textAlign = 'left';
   ctx.fillText(`SCORE: ${score}`, 12, 24);
-
-  // Level
-  ctx.fillStyle = '#ffd700';
-  ctx.textAlign = 'center';
+  ctx.fillStyle = '#ffd700'; ctx.textAlign = 'center';
   ctx.fillText(`LEVEL ${level}`, W/2, 24);
-
-  // High score
-  ctx.fillStyle = '#7affdf';
-  ctx.textAlign = 'right';
+  ctx.fillStyle = '#7affdf'; ctx.textAlign = 'right';
   ctx.fillText(`HI: ${highScore}`, W-12, 24);
-
-  // Lives
-  for (let i=0; i<lives; i++) {
-    ctx.fillStyle = '#ff4466';
-    ctx.font = '18px serif';
-    ctx.fillText('♥', W-12 - i*24, 48);
-  }
-
+  for (let i=0; i<lives; i++) { ctx.font='18px serif'; ctx.fillText('♥', W-12-i*24, 48); }
+  if (combo >= 3) { ctx.fillStyle='#ffd700'; ctx.font='bold 13px Courier New'; ctx.textAlign='left'; ctx.fillText(`🔥 COMBO x${combo}`, 12, 48); }
   // Question prompt
-  ctx.fillStyle = '#fff';
-  ctx.font = 'bold 18px Courier New';
-  ctx.textAlign = 'center';
-  ctx.shadowColor = '#00ffcc';
-  ctx.shadowBlur = 8;
-  ctx.fillText(`➤  ${currentQ ? currentQ.prompt : ''}`, W/2, H - 18);
-  ctx.shadowBlur = 0;
-
-  // Combo
-  if (combo >= 3) {
-    ctx.fillStyle = '#ffd700';
-    ctx.font = 'bold 14px Courier New';
-    ctx.textAlign = 'left';
-    ctx.fillText(`🔥 COMBO x${combo}`, 12, 48);
+  ctx.fillStyle = '#fff'; ctx.font = 'bold 17px Courier New'; ctx.textAlign = 'center';
+  ctx.shadowColor = '#00ffcc'; ctx.shadowBlur = 8;
+  const prompt = currentQ ? currentQ.prompt : '';
+  if (prompt.length > 32) {
+    ctx.font = 'bold 13px Courier New';
   }
+  ctx.fillText(`➤  ${prompt}`, W/2, H-16);
+  ctx.shadowBlur = 0;
 }
-
-// ─── UPDATE ─────────────────────────────────────────────────────────────────────
-function update(dt) {
-  // Move ship
+ 
+// ── UPDATE ───────────────────────────────────────────────────────────────────────
+function update() {
   if (keys['ArrowLeft'] || keys['KeyA']) ship.x = Math.max(20, ship.x - ship.spd);
   if (keys['ArrowRight'] || keys['KeyD']) ship.x = Math.min(W-20, ship.x + ship.spd);
-
-  // Move bullets
+ 
   bullets.forEach(b => { b.y -= b.spd; });
-  bullets = bullets.filter(b => b.y > 0);
-
-  // Move aliens
+  bullets = bullets.filter(b => b.y > 0 && b.active);
+ 
   aliens.forEach(a => { a.y += a.spd; });
-
-  // Bullet-alien collision
+ 
+  // Bullet-alien collisions
   bullets.forEach(b => {
     if (!b.active) return;
     aliens.forEach(a => {
       if (a.hit) return;
-      if (Math.abs(b.x - a.x) < a.w/2 && Math.abs(b.y - a.y) < a.h/2) {
-        b.active = false;
-        a.hit = true;
+      if (Math.abs(b.x-a.x) < a.w/2 && Math.abs(b.y-a.y) < a.h/2) {
+        b.active = false; a.hit = true;
         if (a.isCorrect) {
-          // Correct!
           combo++;
-          const bonus = combo >= 3 ? 5 : 0;
-          score += 10 + bonus + level;
+          score += 10 + level + (combo >= 3 ? 5 : 0);
           explode(a.x, a.y, '#00ffcc', 18);
           doFlash('#00ffcc');
-          // remove other aliens from this wave
           aliens.forEach(o => { if (!o.isCorrect) o.hit = true; });
-          setTimeout(() => spawnAlienWave(), 400);
+          setTimeout(spawnWave, 400);
         } else {
-          // Wrong!
-          combo = 0;
-          lives--;
+          combo = 0; lives--;
           explode(a.x, a.y, '#ff4466', 12);
           doFlash('#ff4466');
           if (lives <= 0) endGame();
@@ -564,131 +583,98 @@ function update(dt) {
     });
   });
   bullets = bullets.filter(b => b.active);
-
+ 
   // Alien reaches bottom
+  let needNewWave = false;
   aliens.forEach(a => {
-    if (!a.hit && a.y > H + 30) {
+    if (!a.hit && a.y > H+40) {
+      a.hit = true;
       if (a.isCorrect) {
-        a.hit = true;
-        combo = 0;
-        lives--;
+        combo = 0; lives--;
         doFlash('#ff4466');
         aliens.forEach(o => { if (!o.isCorrect) o.hit = true; });
-        if (lives <= 0) { endGame(); return; }
-        setTimeout(() => spawnAlienWave(), 400);
-      } else {
-        a.hit = true;
+        needNewWave = true;
+        if (lives <= 0) { endGame(); needNewWave = false; }
       }
     }
   });
   aliens = aliens.filter(a => !a.hit);
-
-  // Level up
-  const nextLevel = Math.floor(score / 80) + 1;
-  if (nextLevel > level) { level = nextLevel; }
-
-  // Particles
-  particles.forEach(p => {
-    p.x += p.vx; p.y += p.vy;
-    p.vy += 0.1;
-    p.life -= 0.035;
-  });
+  if (needNewWave && state === 'playing') setTimeout(spawnWave, 400);
+ 
+  level = Math.floor(score / 80) + 1;
+ 
+  particles.forEach(p => { p.x+=p.vx; p.y+=p.vy; p.vy+=0.1; p.life-=0.033; });
   particles = particles.filter(p => p.life > 0);
 }
-
-// ─── DRAW PARTICLES ─────────────────────────────────────────────────────────────
-function drawParticles() {
-  particles.forEach(p => {
-    ctx.globalAlpha = p.life;
-    ctx.fillStyle = p.color;
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI*2);
-    ctx.fill();
-  });
-  ctx.globalAlpha = 1;
-}
-
-// ─── LOOP ───────────────────────────────────────────────────────────────────────
-let lastTime = 0;
-function loop(ts) {
-  const dt = ts - lastTime; lastTime = ts;
+ 
+// ── LOOP ────────────────────────────────────────────────────────────────────────
+function loop() {
   if (state === 'playing') {
     ctx.clearRect(0,0,W,H);
-    drawStars();
-    drawShip();
+    drawStars(); drawShip();
     aliens.forEach(drawAlien);
     bullets.forEach(drawBullet);
-    drawParticles();
-    drawHUD();
-    update(dt);
+    drawParticles(); drawHUD();
+    update();
   }
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
-
-// ─── GAME CONTROL ───────────────────────────────────────────────────────────────
+ 
+// ── GAME CONTROL ─────────────────────────────────────────────────────────────────
 function startGame() {
-  score = 0; lives = 3; level = 1; combo = 0;
-  aliens = []; bullets = []; particles = [];
-  buildPool();
-  initShip();
-  spawnAlienWave();
-  state = 'playing';
+  score=0; lives=3; level=1; combo=0;
+  aliens=[]; bullets=[]; particles=[];
+  buildPool(); initShip(); spawnWave();
+  state='playing';
   document.getElementById('menu-screen').classList.add('hidden');
   document.getElementById('gameover-screen').classList.add('hidden');
 }
-
+ 
 function endGame() {
-  state = 'gameover';
-  const isNewHS = score > highScore;
-  if (isNewHS) { highScore = score; localStorage.setItem('hs_viva1', highScore); }
-
+  state='gameover';
+  const isNew = score > highScore;
+  if (isNew) { highScore=score; localStorage.setItem('hs_viva1b', highScore); }
   scoreHistory.unshift({ score, level, date: new Date().toLocaleDateString('en-AU') });
-  if (scoreHistory.length > 8) scoreHistory = scoreHistory.slice(0,8);
-  localStorage.setItem('sh_viva1', JSON.stringify(scoreHistory));
-
-  document.getElementById('final-score').textContent = `SCORE: ${score}`;
-  document.getElementById('final-level').textContent = `Reached Level ${level}`;
-  document.getElementById('new-hs').style.display = isNewHS ? 'block' : 'none';
+  if (scoreHistory.length > 8) scoreHistory=scoreHistory.slice(0,8);
+  localStorage.setItem('sh_viva1b', JSON.stringify(scoreHistory));
+  document.getElementById('final-score').textContent=`SCORE: ${score}`;
+  document.getElementById('final-level').textContent=`Reached Level ${level}`;
+  document.getElementById('new-hs').style.display=isNew?'block':'none';
   renderHistory('score-history-go');
   document.getElementById('gameover-screen').classList.remove('hidden');
 }
-
+ 
 function renderHistory(id) {
-  const el = document.getElementById(id);
-  if (!scoreHistory.length) { el.textContent = ''; return; }
-  el.innerHTML = '<span style="color:#aaa">— SCORE HISTORY —</span><br>' +
-    scoreHistory.map((s,i) => `${i+1}. ${s.date} &nbsp; Score: ${s.score} &nbsp; Lv ${s.level}`).join('<br>');
+  const el=document.getElementById(id);
+  if (!scoreHistory.length) { el.textContent=''; return; }
+  el.innerHTML='<span style="color:#aaa">— SCORE HISTORY —</span><br>'+
+    scoreHistory.map((s,i)=>`${i+1}. ${s.date} &nbsp; Score: ${s.score} &nbsp; Lv ${s.level}`).join('<br>');
 }
-
+ 
 function showMenu() {
-  state = 'menu';
-  document.getElementById('highscore-display').textContent = `🏆 HIGH SCORE: ${highScore}`;
+  state='menu';
+  document.getElementById('highscore-display').textContent=`🏆 HIGH SCORE: ${highScore}`;
   renderHistory('score-history');
   document.getElementById('menu-screen').classList.remove('hidden');
   document.getElementById('gameover-screen').classList.add('hidden');
 }
-
+ 
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('play-again-btn').addEventListener('click', startGame);
 document.getElementById('menu-btn').addEventListener('click', showMenu);
-
-// Mobile touch: drag to move cannon, tap to fire
-let touchX = null;
-canvas.addEventListener('touchstart', e => {
-  e.preventDefault();
-  touchX = e.touches[0].clientX;
-  fireBullet();
-}, {passive:false});
-canvas.addEventListener('touchmove', e => {
-  e.preventDefault();
-  const dx = e.touches[0].clientX - touchX;
-  ship.x = Math.max(20, Math.min(W-20, ship.x + dx));
-  touchX = e.touches[0].clientX;
-}, {passive:false});
-
-// Init menu
+ 
+// Mobile touch
+let touchX=null;
+canvas.addEventListener('touchstart', e=>{ e.preventDefault(); touchX=e.touches[0].clientX; fireBullet(); },{passive:false});
+canvas.addEventListener('touchmove', e=>{ e.preventDefault(); const dx=e.touches[0].clientX-touchX; ship.x=Math.max(20,Math.min(W-20,ship.x+dx)); touchX=e.touches[0].clientX; },{passive:false});
+ 
 showMenu();
 </script>
 </body>
 </html>
+ 
+
+
+
+
